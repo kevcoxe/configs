@@ -74,7 +74,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.kesalarc
-source $HOME/.configs
+source $HOME/.my-aliases
 
 # User configuration
 

@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'acoustichero/goldenrod.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -44,6 +45,9 @@ set undofile                 "turn on the feature
 set undodir=~/.vim/undo  "directory where the undo files will be stored
 
 set mouse=""
+
+set background=dark
+colorscheme goldenrod
 
 " undo file
 if has('persistent_undo')      "check if your vim version supports it

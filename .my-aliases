@@ -1,0 +1,13 @@
+
+set escape-time 100
+alias vi='/usr/bin/vim'
+alias vim='nvim'
+
+alias ys='yadm status'
+alias ya='yadm add'
+alias yc='yadm commit'
+alias yp='yadm push'
+
+alias vimrc='vim .config/nvim/init.vim'
+
+set -o vi
