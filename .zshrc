@@ -74,7 +74,12 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.kesalarc
-source $HOME/.my-aliases
+source $HOME/.my-aliases.sh
+
+SSH=$HOME/.ssh
+
+source $SSH/my_work_ssh_aliases.sh
+source $SSH/my_home_ssh_aliases.sh
 
 # User configuration
 
