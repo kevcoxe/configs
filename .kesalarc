@@ -2,4 +2,7 @@
 alias kesala-client='ssh kesalaadmin@setup.gosilent'
 alias gs-cable='screen /dev/cu.usbserial 115200 8N1 defscrollback 30000'
 
+alias read-csr='openssl req -text -noout -verify -in'
+alias read-cert='openssl x509 -noout -text -in'
+
 
