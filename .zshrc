@@ -95,6 +95,9 @@ else
   export EDITOR='nvim'
 fi
 
+GOPATH=$HOME/go
+PATH=$PATH:$GOPATH/bin
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 

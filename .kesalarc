@@ -1,5 +1,8 @@
 
-alias kesala-client='ssh kesalaadmin@setup.gosilent'
+alias pkesala='sed -i -e '/setup.gosilent/d' ~/.ssh/known_hosts'
+alias akesala='ssh-copy-id kesalaadmin@setup.gosilent'
+alias rkesala='sed -i "" "/setup.gosilent/d" /Users/kevcoxe/.ssh/known_hosts'
+alias kesala='ssh kesalaadmin@setup.gosilent'
 alias gs-cable='screen /dev/cu.usbserial 115200 8N1 defscrollback 30000'
 
 alias read-csr='openssl req -text -noout -verify -in'

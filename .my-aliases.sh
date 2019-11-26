@@ -27,4 +27,19 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 alias vimrc='vim .config/nvim/init.vim'
 
+alias python-activate='source /Users/kevcoxe/venv/bin/activate'
+alias spython='/Users/kevcoxe/venv/bin/python'
+alias supython='sudo /Users/kevcoxe/venv/bin/python'
+alias spip='/Users/kevcoxe/venv/bin/pip2'
+
+pclean () {
+  find . -name "*.pyc" -exec rm -f {} \;
+  find . -name "__pycache__" -exec rm -rf {} \;
+}
+
+mcd () {
+  mkdir $1
+  cd $1
+}
+
 set -o vi
