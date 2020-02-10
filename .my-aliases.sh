@@ -8,6 +8,7 @@ alias ya='yadm add'
 alias yc='yadm commit'
 alias yp='yadm push'
 
+alias cdr='cd $(git rev-parse --show-toplevel)'
 alias la='ls -a'
 alias ll='ls -l'
 alias lh='ls -lh'

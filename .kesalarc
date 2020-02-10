@@ -1,6 +1,5 @@
 
 alias pkesala='sed -i -e '/setup.gosilent/d' ~/.ssh/known_hosts'
-alias akesala='ssh-copy-id kesalaadmin@setup.gosilent'
 alias rkesala='sed -i "" "/setup.gosilent/d" /Users/kevcoxe/.ssh/known_hosts'
 alias kesala='ssh kesalaadmin@setup.gosilent'
 alias gs-cable='screen /dev/cu.usbserial 115200 8N1 defscrollback 30000'
@@ -8,4 +7,11 @@ alias gs-cable='screen /dev/cu.usbserial 115200 8N1 defscrollback 30000'
 alias read-csr='openssl req -text -noout -verify -in'
 alias read-cert='openssl x509 -noout -text -in'
 
+
+akesala () {
+  ssh-copy-id kesalaadmin@setup.gosilent;
+  ssh kesalaadmin@setup.gosilent "sudo rm -rf /data/configs && sudo mkdir /data/configs && sudo chown -R kesalaadmin:kesalaadmin /data/configs";
+  scp -r /Users/kevcoxe/Documents/pi-configs/configs kesalaadmin@setup.gosilent:/data/.;
+  ssh kesalaadmin@setup.gosilent "source /data/configs/create_links.sh";
+}
 
